@@ -1,0 +1,26 @@
+{
+  "name": "web_rtc_chat_app",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000w\u0000e\u0000b\u0000_\u0000r\u0000t\u0000c\u0000_\u0000c\u0000h\u0000a\u0000t\u0000_\u0000a\u0000p\u0000p\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MohamedAmineNasri/web_rtc_chat_app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MohamedAmineNasri/web_rtc_chat_app/issues"
+  },
+  "homepage": "https://github.com/MohamedAmineNasri/web_rtc_chat_app#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0",
+    "socket.io": "^4.7.5"
+  }
+}
