@@ -1,24 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Typography, AppBar, styled } from '@mui/material';
+import VideoPlayer from './components/VideoPlayer';
+import Options from './components/Options';
+import Notifications from './components/Notifications';
 
-function App() {
+const Wrapper = styled('div')(({ theme }) => ({
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  width: '100%',
+
+  '& .MuiAppBar-root': {
+    borderRadius: 15,
+    margin: '30px 100px',
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '600px',
+    border: '2px solid black',
+    [theme.breakpoints.down('xs')]: {
+      width: '90%',
+    },
+  },
+}));
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Wrapper>
+      <AppBar position='static' color='inherit'>
+        <Typography variant='h2' align='center'>Video Chat</Typography>
+      </AppBar>
+      <VideoPlayer />
+      <Options>
+        <Notifications />
+      </Options>
+    </Wrapper>
   );
 }
 
